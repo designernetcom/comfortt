@@ -7728,6 +7728,7 @@ Footer One
   width: 100%;
   transition: .5s ease;
   transform: scale(1.05);
+  object-fit: none;
 }
 
 .about-two__img:hover .about-two__img-inner img {
