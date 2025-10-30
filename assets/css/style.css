@@ -3447,7 +3447,7 @@ Main Slider Two
 
 .main-slider-two .image-layer {
   position: absolute;
-  top: 0;
+  top: 125px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -16486,7 +16486,7 @@ Contact Page
 .sticky-icon  {
   z-index: 11111;
   position: fixed;
-  top: 40%;
+  top: 55%;
   right: 0px;
   width: 50px;
   display: flex;

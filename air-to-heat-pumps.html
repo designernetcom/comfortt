@@ -339,17 +339,24 @@
             </div>
         </section>
         <!--End Page Header-->
+
+
+
+                <!-- Add AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
         
            <!--Start Blog Details -->
            <section class="blog-details">
-            <div class="container">
-                <div class="row">
+                <div class="container">
+                    <div class="row">
                      <!--Start Sidebar-->
-                    <div class="col-md-4">
+                     <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
                         <div class="sidebar">
                            
                             <!--Start Sidebar Single-->
-                            <div class="sidebar__single sidebar__category wow animated fadeInUp" data-wow-delay="0.2s">
+                            <div class="sidebar__single sidebar__category">
                                 <h3 class="sidebar__title">Our Products</h3>
                                 <ul class="sidebar__category-list">
                                     <li>
@@ -383,7 +390,7 @@
                             </div>
                             <!--End Sidebar Single-->
                            
-                            <div class="sidebar__single sidebar__support wow animated fadeInUp" data-wow-delay="0.3s">
+                            <div class="sidebar__single sidebar__support" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="sidebar__support-bg"
                                     style="background-image: url(assets/images/backgrounds/pcont-bk.jpg);background-size: cover;">
                                 </div>
@@ -402,10 +409,9 @@
                     <!--End Sidebar-->
 
                     <!--Start Blog Details Content-->
-                    <div class="col-md-8">
-                        <div class="blog-details__content">
-                            <!--Start Blog Page Single-->
-                            <div class="blog-page__single">
+                        <div class="col-md-8" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="blog-details__content">
+                            <div class="blog-page__single" data-aos="fade-up" data-aos-delay="200">
                                 <div class="blog-page__single-img">
                                     <div class="inner">
                                         <img src="assets/images/air-heat.webp" alt="#">
@@ -475,6 +481,128 @@
             </div>
         </section>
         <!--End Blog Details -->
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: 'ease-in-out',
+  });
+</script>
+
+
+<style>
+    .blog-details {
+  padding: 80px 0;
+  background: #f9fafc;
+}
+
+.blog-page__single-img img {
+  border-radius: 15px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.blog-page__single-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar__category {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+}
+.sidebar__category:hover {
+  transform: translateY(-5px);
+}
+
+.sidebar__title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* .sidebar__title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 40px;
+  height: 3px;
+  background: #007bff;
+  border-radius: 3px;
+} */
+
+.sidebar__category-list li {
+  list-style: none;
+  margin: 8px 0;
+}
+.sidebar__category-list li a {
+  color: #444;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.sidebar__category-list li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.sidebar__support {
+  position: relative;
+  border-radius: 15px;
+  padding: 25px;
+  color: #fff;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.sidebar__support-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+.sidebar__suppot-title,
+.sidebar__suppot-text,
+.sidebar__support-btn-box {
+  position: relative;
+  z-index: 2;
+}
+
+.thm-btn {
+  background: #007bff;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+.thm-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.faq-two__accordion .accordion {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+.faq-two__accordion .accordion:hover {
+  transform: scale(1.02);
+}
+
+</style>
+
+
+
+
 
         <!--Start Footer One -->
     <footer class="footer-one" style="background-image: url(assets/images/footer-bk.jpg);background-size: cover;">
