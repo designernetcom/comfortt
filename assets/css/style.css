@@ -4063,9 +4063,9 @@ Main Slider Three
 .about-one__img-inner .experience-box {
   position: absolute;
   left: 0;
-  bottom: 40%;
+  bottom: 37%;
   background: rgba(255, 255, 255, .8);
-  padding: 30px 40px 29px;
+  padding: 15px 25px 15px;
   z-index: 5;
   box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
 }

@@ -245,25 +245,44 @@
     background-position: top center;
   }
 
-  /* Optional adjustments to keep text visible */
-  .main-slider-two .swiper-slide {
-    min-height: 60vh;
-    padding-top: 100px; /* prevent overlap with image */
+  .main-slider-two .text-box p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
   }
 
-  .main-slider-two__content {
+  /* Optional adjustments to keep text visible */
+  .main-slider-two .swiper-slide {
+/* min-height: 60vh;  */
+        padding-top: 135px;
+        margin-bottom: -480px;
+  }
+  
+
+  /* .main-slider-two__content {
     text-align: left;
     position: relative;
     z-index: 2;
     top: -290px;
     font-size: 15px;
     align-items: justify;
-  }
+  } */
+       .main-slider-two .container {
+        padding: 0px 15px 555px;
+        /* margin-bottom: -34px; */
+    }
 }
 @media only screen and (max-width: 767px) {
     .main-slider-two__content .title h2 {
         font-size: 25px;
     }
+    }
+@media only screen and (min-width: 500px) and (max-width: 766px) {
+    .about-one {
+        padding: 0px 0px 50px;
+        margin-top: 0px;
+    }
+}
     .main-slider-two__content .btn-box {
     position: relative;
     display: block;
@@ -271,11 +290,11 @@
     margin-top: 10px;
     opacity: 0;
     }
-}
+
 @media only screen and (max-width: 767px) {
     .sec-title__tagline h6 {
         font-size: 17px;
-        margin-top: -135%;
+        margin-top: -10%;
     }
 }
         </style>
@@ -638,6 +657,30 @@
         </section><br>
         <!--End Counter One -->
 
+
+<style>
+        .sec-title__tagline h5 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-family: var(--thm-font);
+    }
+    @media only screen and (max-width: 767px) {
+    .sec-title__tagline h5 {
+        font-size: 20px;
+        margin-top: 0%;
+        font-family: var(--thm-font);
+            line-height: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    }
+}
+</style>
+
+
         <!--Start Services One -->
         <section class="services-one">
             <div class="shape1 float-bob-y"><img src="assets/images/shapes/services-v1-shape1.png" alt="#"></div>
@@ -648,7 +691,7 @@
                         <div class="services-one__content">
                             <div class="sec-title">
                                 <div class="sec-title__tagline">
-                                    <h6>Our Services</h6>
+                                    <h5>Our Services</h5>
                                 </div>
                                 <h2 class="sec-title__title">We Try to Best Consulting <br> In Company Repair. </h2>
                             </div>
